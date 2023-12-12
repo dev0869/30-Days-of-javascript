@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header
+      class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"
+    >
+      <div class="text-light w-100 h3 text-center">ID Card generator</div>
+    </header>
+    <div class="container d-flex">
+      <div class="section-container col-6 p-4">
+        <div class="text-center font-weight-bold">
+          <h3>Input form</h3>
+        </div>
+        <form id="form">
+          <div class="form-element py-3">
+            <label class="form-label"> Enter Name: </label>
+            <input type="text" name="name" />
+          </div>
+          <div class="form-element py-3">
+            <label for="gender">Gender:</label>
+            <select  name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-element py-3">
+            <label class="form-label"> Enter Location: </label>
+            <input type="text" name="location" />
+          </div>
+          <button
+            onclick="generateCard()"
+            type="button"
+            class="btn generateButton"
+          >
+            Generate Card
+          </button>
+        </form>
+      </div>
+      <div class="section-container col-6">
+        <div class="id-card-container" id="collegeCard">
+          <div class="text-center">
+            <h3>Generated Card</h3>
+          </div>
+          <div class="card-container">
+            <div class="card-wrapper">
+              <div class="user-card">
+                <span class="user-photo">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <div class="general-information">
+                <div class="card-element card-name">
+                  <span>Name:</span>
+                  <span id="cardName"></span>
+                </div>
+                <div class="card-element college-name">
+                  <span>Gender:</span>
+                  <span id="Gender"></span>
+                </div>
+                <div class="card-element college-name">
+                  <span>Location:</span>
+                  <span id="cardLocation"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
