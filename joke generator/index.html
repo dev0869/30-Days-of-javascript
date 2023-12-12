@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <title>Random Quote Generator</title>
+ <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #f5f5f5;
+    }
+    .card {
+      border: none;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card-body {
+      padding: 40px;
+    }
+    #quoteButton {
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 4px;
+      margin:   auto 0;
+    }
+    #quoteText {
+      font-weight: 700;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+ </style>
+</head>
+<body>
+ <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="text-center">Random Quote Generator</h1>
+            <button id="quoteButton" class="btn btn-primary">Get a quote</button>
+            <p id="quoteText"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+
+ <script src="./index.js"></script>
+</body>
+</html>
